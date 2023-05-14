@@ -1,0 +1,100 @@
+@import url('all.css');
+
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+}
+
+.container{
+  width: 100%;
+  height: 100vh;
+  background: #1a2035;
+}
+
+.container-messages{
+  background: url('assets/bd.webp');
+  width: 50%;
+  height: 80vh;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden auto;
+  box-shadow: 2px 2px 10px #222;
+  border-radius: 6px;
+}
+
+.container-messages::-webkit-scrollbar{
+  display: none;
+}
+
+.message{
+  width: 300px;
+  height: 50px;
+  background: #1a2035b7;
+  margin: 10px 0px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: left;
+  padding: 10px;
+  color: #2ecc71;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 20px;
+  font-weight: bold;
+  text-transform: lowercase;
+  box-shadow: 2px 5px 10px #222;
+}
+
+.container-form{
+  width: 50%;
+  height: 10vh;
+  margin: 0px auto;
+  display: flex;
+  align-items: center;
+}
+
+.i-message{
+  width: 90%;
+  height: 50%;
+  background: #1a2035;
+  border: none;
+  padding: 10px;
+  border-radius: 6px 0px 0px 6px;
+  color: #222;
+  font-weight: bold;
+  border: 2px solid #2ecc71;
+}
+
+.i-message::placeholder{
+  color: #f3f3f3;
+}
+
+.i-message:focus{
+  transition: all .5s ease-in;
+  background: #2ecc71;
+}
+
+.b-message{
+  width: 10%;
+  height: 50%;
+  background: #2ecc71;
+  color: #222;
+  border: none;
+  border-radius: 0px 6px 6px 0px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.b-message:hover{
+  transition: all .5s ease;
+  background: #1a2035;
+  color: #2ecc71;
+  border: 2px solid #2ecc71;
+}
+
+.container-form, .container-messages {
+  position: relative;
+  top: 5vh;
+}
